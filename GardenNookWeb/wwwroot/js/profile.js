@@ -152,6 +152,9 @@ function renderOrders(orders) {
         const comment = order.comment
             ? `<div class="order-history-comment">Комментарий: ${escapeHtml(order.comment)}</div>`
             : '';
+        const pickupAt = order.pickupAt
+            ? `<div class="order-history-meta">Самовывоз: ${formatDate(order.pickupAt)}</div>`
+            : '';
         const composition = renderOrderItems(order.items || []);
 
         const cancelButton = order.canCancel
@@ -167,6 +170,7 @@ function renderOrders(orders) {
 
                 <div class="order-history-meta">Дата: ${formatDate(order.createdAt)}</div>
                 <div class="order-history-meta">Тип: ${escapeHtml(order.orderType || '-')}</div>
+                ${pickupAt}
                 <div class="order-history-meta">Сумма: ${formatNumber(order.totalPrice)} ₽</div>
                 <div class="order-history-meta">Калории: ${formatNumber(order.totalCalories)}</div>
 

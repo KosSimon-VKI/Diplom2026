@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace TransferModels.Orders
 {
@@ -6,6 +7,7 @@ namespace TransferModels.Orders
     {
         public int OrderTypeId { get; set; }
         public string Comment { get; set; }
+        public DateTime? PickupAt { get; set; }
 
         public List<OrderDishItemRequest> Dishes { get; set; }
         public List<OrderDrinkItemRequest> Drinks { get; set; } 
@@ -42,3 +44,4 @@ namespace TransferModels.Orders
         public int Quantity { get; set; }
     }
 }
+

@@ -170,11 +170,26 @@ namespace GardenNookWpf.Views
                 var data = JsonSerializer.Deserialize<KitchenOrdersResponse>(responseJson, JsonOptions)
                     ?? new KitchenOrdersResponse();
 
-                var cards = BuildOrderCards(data.Orders ?? new List<KitchenOrderDto>());
-                _orderCards = cards;
+                var orders = data.Orders ?? new List<KitchenOrderDto>();
+                var pickupOrders = orders
+                    .Where(o => o.PickupAt.HasValue)
+                    .ToList();
+                var noPickupOrders = orders
+                    .Where(o => !o.PickupAt.HasValue)
+                    .ToList();
+
+                var pickupCards = BuildOrderCards(pickupOrders);
+                var noPickupCards = BuildOrderCards(noPickupOrders);
+
+                _orderCards = pickupCards
+                    .Concat(noPickupCards)
+                    .ToList();
                 UpdateOrderHeaders(DateTime.Now);
 
-                OrdersDisplayControl.ShowOrders(cards, "Нет активных заказов");
+                OrdersDisplayControl.ShowOrders(
+                    pickupCards,
+                    noPickupCards,
+                    "Нет активных заказов");
             }
             catch (Exception ex)
             {
@@ -262,6 +277,8 @@ namespace GardenNookWpf.Views
                     continue;
                 }
 
+                var pickupAtText = BuildPickupAtText(order.PickupAt);
+
                 cards.Add(new KitchenOrderCardViewModel
                 {
                     OrderId = order.OrderId,
@@ -270,6 +287,8 @@ namespace GardenNookWpf.Views
                     ElapsedText = BuildElapsedText(order.CreatedAt, DateTime.Now),
                     IsOverdue = IsOrderOverdue(order.CreatedAt, DateTime.Now),
                     OrderTypeText = BuildOrderTypeText(order.OrderType),
+                    PickupAtText = pickupAtText,
+                    PickupAtVisibility = string.IsNullOrWhiteSpace(pickupAtText) ? Visibility.Collapsed : Visibility.Visible,
                     OrderCommentText = order.Comment ?? string.Empty,
                     OrderCommentVisibility = string.IsNullOrWhiteSpace(order.Comment) ? Visibility.Collapsed : Visibility.Visible,
                     DisplayItems = displayItems
@@ -303,6 +322,16 @@ namespace GardenNookWpf.Views
             }
 
             return orderType.Trim();
+        }
+
+        private static string BuildPickupAtText(DateTime? pickupAt)
+        {
+            if (pickupAt == null)
+            {
+                return string.Empty;
+            }
+
+            return $"Самовывоз: {pickupAt.Value.ToString("dd.MM.yyyy HH:mm", CultureInfo.CurrentCulture)}";
         }
 
         private static string FormatQuantity(decimal quantity)

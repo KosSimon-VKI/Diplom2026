@@ -56,6 +56,7 @@
     <Compile Include="Order\OrderDto.cs" />
     <Compile Include="Order\OrderRequest.cs" />
     <Compile Include="Order\OrderResponse.cs" />
+    <Compile Include="Order\PickupSlotsResponse.cs" />
     <Compile Include="Order\OrderStockConflictResponse.cs" />
     <Compile Include="Order\OrderToppingDto.cs" />
     <Compile Include="Profile\ProfileCancelOrderResponse.cs" />

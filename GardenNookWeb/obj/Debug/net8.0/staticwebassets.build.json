@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZEFM5cYmn8IX1TXXomWYmtaEgHsmOLfiNfH1nkHPOPg=",
+  "Hash": "sXJtk3Vyk2aZG80i6u4J6cEXqdhHHAWiBV5GtwyOWHw=",
   "Source": "GardenNookWeb",
   "BasePath": "_content/GardenNookWeb",
   "Mode": "Default",
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "mkzbbjscpd",
-      "Integrity": "1l/KdE5aIxUChoHVVvWAE+XcW/K6hLQ9ff1xQ6bDIps=",
+      "Fingerprint": "d6w06q8gez",
+      "Integrity": "G286ILfaE6bmo8JV3EFbC4S9xUoV5XiHtjn8pZodiL8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\checkout.css"
@@ -157,8 +157,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0stq1dyds0",
-      "Integrity": "QG58DKoJ3+Qd42uXdFNOzrhL+EvAFyDxESLhThdT7fM=",
+      "Fingerprint": "ui7qh08gik",
+      "Integrity": "ltlE912gwYBkcTbVrS5ore9gycLE1fQ7XLSQE3EhyXw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\menu.css"
@@ -451,8 +451,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ex1jei0j6r",
-      "Integrity": "flmb8nnfbqOxr0kHhiJgqRQhZlKVjpxssAZ69WNiPZU=",
+      "Fingerprint": "qk7n3pd7jx",
+      "Integrity": "Gv1VUCtmNmRFFawrYbjlSYl6WXqc1ukEBEzlVnmunVM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\cart.js"
@@ -535,8 +535,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7bp8upyu6c",
-      "Integrity": "3UvN3KzGBfuiURI49lAuHZxnpJreh1cDvdWJJb0Fnqw=",
+      "Fingerprint": "4h2cjmlvat",
+      "Integrity": "eE2ygstFwyvR58P8Cxc3toEEU2U8YwEpjcsdSGZXbZQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\profile.js"
@@ -1915,7 +1915,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2951"
+          "Value": "3423"
         },
         {
           "Name": "Content-Type",
@@ -1923,11 +1923,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1l/KdE5aIxUChoHVVvWAE+XcW/K6hLQ9ff1xQ6bDIps=\""
+          "Value": "\"G286ILfaE6bmo8JV3EFbC4S9xUoV5XiHtjn8pZodiL8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 16 Mar 2026 15:37:40 GMT"
+          "Value": "Thu, 26 Mar 2026 09:12:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1937,12 +1937,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1l/KdE5aIxUChoHVVvWAE+XcW/K6hLQ9ff1xQ6bDIps="
+          "Value": "sha256-G286ILfaE6bmo8JV3EFbC4S9xUoV5XiHtjn8pZodiL8="
         }
       ]
     },
     {
-      "Route": "css/checkout.mkzbbjscpd.css",
+      "Route": "css/checkout.d6w06q8gez.css",
       "AssetFile": "C:\\Users\\Admin\\Desktop\\fh\\C#\\diplom_v6(c Codex)\\GardenNookWeb\\wwwroot\\css\\checkout.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1952,7 +1952,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2951"
+          "Value": "3423"
         },
         {
           "Name": "Content-Type",
@@ -1960,11 +1960,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1l/KdE5aIxUChoHVVvWAE+XcW/K6hLQ9ff1xQ6bDIps=\""
+          "Value": "\"G286ILfaE6bmo8JV3EFbC4S9xUoV5XiHtjn8pZodiL8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 16 Mar 2026 15:37:40 GMT"
+          "Value": "Thu, 26 Mar 2026 09:12:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1974,7 +1974,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "mkzbbjscpd"
+          "Value": "d6w06q8gez"
         },
         {
           "Name": "label",
@@ -1982,7 +1982,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1l/KdE5aIxUChoHVVvWAE+XcW/K6hLQ9ff1xQ6bDIps="
+          "Value": "sha256-G286ILfaE6bmo8JV3EFbC4S9xUoV5XiHtjn8pZodiL8="
         }
       ]
     },
@@ -2069,51 +2069,6 @@
       ]
     },
     {
-      "Route": "css/menu.0stq1dyds0.css",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\fh\\C#\\diplom_v6(c Codex)\\GardenNookWeb\\wwwroot\\css\\menu.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "10033"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"QG58DKoJ3+Qd42uXdFNOzrhL+EvAFyDxESLhThdT7fM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 17 Mar 2026 13:55:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "0stq1dyds0"
-        },
-        {
-          "Name": "label",
-          "Value": "css/menu.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-QG58DKoJ3+Qd42uXdFNOzrhL+EvAFyDxESLhThdT7fM="
-        }
-      ]
-    },
-    {
       "Route": "css/menu.css",
       "AssetFile": "C:\\Users\\Admin\\Desktop\\fh\\C#\\diplom_v6(c Codex)\\GardenNookWeb\\wwwroot\\css\\menu.css",
       "Selectors": [],
@@ -2124,7 +2079,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10033"
+          "Value": "10144"
         },
         {
           "Name": "Content-Type",
@@ -2132,11 +2087,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QG58DKoJ3+Qd42uXdFNOzrhL+EvAFyDxESLhThdT7fM=\""
+          "Value": "\"ltlE912gwYBkcTbVrS5ore9gycLE1fQ7XLSQE3EhyXw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Mar 2026 13:55:25 GMT"
+          "Value": "Thu, 26 Mar 2026 09:22:23 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2146,7 +2101,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-QG58DKoJ3+Qd42uXdFNOzrhL+EvAFyDxESLhThdT7fM="
+          "Value": "sha256-ltlE912gwYBkcTbVrS5ore9gycLE1fQ7XLSQE3EhyXw="
+        }
+      ]
+    },
+    {
+      "Route": "css/menu.ui7qh08gik.css",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\fh\\C#\\diplom_v6(c Codex)\\GardenNookWeb\\wwwroot\\css\\menu.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ltlE912gwYBkcTbVrS5ore9gycLE1fQ7XLSQE3EhyXw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 26 Mar 2026 09:22:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ui7qh08gik"
+        },
+        {
+          "Name": "label",
+          "Value": "css/menu.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ltlE912gwYBkcTbVrS5ore9gycLE1fQ7XLSQE3EhyXw="
         }
       ]
     },
@@ -3381,51 +3381,6 @@
       ]
     },
     {
-      "Route": "js/cart.ex1jei0j6r.js",
-      "AssetFile": "C:\\Users\\Admin\\Desktop\\fh\\C#\\diplom_v6(c Codex)\\GardenNookWeb\\wwwroot\\js\\cart.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "15615"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"flmb8nnfbqOxr0kHhiJgqRQhZlKVjpxssAZ69WNiPZU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Mar 2026 04:21:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ex1jei0j6r"
-        },
-        {
-          "Name": "label",
-          "Value": "js/cart.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-flmb8nnfbqOxr0kHhiJgqRQhZlKVjpxssAZ69WNiPZU="
-        }
-      ]
-    },
-    {
       "Route": "js/cart.js",
       "AssetFile": "C:\\Users\\Admin\\Desktop\\fh\\C#\\diplom_v6(c Codex)\\GardenNookWeb\\wwwroot\\js\\cart.js",
       "Selectors": [],
@@ -3436,7 +3391,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15615"
+          "Value": "20754"
         },
         {
           "Name": "Content-Type",
@@ -3444,11 +3399,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"flmb8nnfbqOxr0kHhiJgqRQhZlKVjpxssAZ69WNiPZU=\""
+          "Value": "\"Gv1VUCtmNmRFFawrYbjlSYl6WXqc1ukEBEzlVnmunVM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Mar 2026 04:21:27 GMT"
+          "Value": "Thu, 26 Mar 2026 09:56:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3458,7 +3413,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-flmb8nnfbqOxr0kHhiJgqRQhZlKVjpxssAZ69WNiPZU="
+          "Value": "sha256-Gv1VUCtmNmRFFawrYbjlSYl6WXqc1ukEBEzlVnmunVM="
+        }
+      ]
+    },
+    {
+      "Route": "js/cart.qk7n3pd7jx.js",
+      "AssetFile": "C:\\Users\\Admin\\Desktop\\fh\\C#\\diplom_v6(c Codex)\\GardenNookWeb\\wwwroot\\js\\cart.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20754"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Gv1VUCtmNmRFFawrYbjlSYl6WXqc1ukEBEzlVnmunVM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 26 Mar 2026 09:56:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qk7n3pd7jx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/cart.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Gv1VUCtmNmRFFawrYbjlSYl6WXqc1ukEBEzlVnmunVM="
         }
       ]
     },
@@ -3709,7 +3709,7 @@
       ]
     },
     {
-      "Route": "js/profile.7bp8upyu6c.js",
+      "Route": "js/profile.4h2cjmlvat.js",
       "AssetFile": "C:\\Users\\Admin\\Desktop\\fh\\C#\\diplom_v6(c Codex)\\GardenNookWeb\\wwwroot\\js\\profile.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3719,7 +3719,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8279"
+          "Value": "8469"
         },
         {
           "Name": "Content-Type",
@@ -3727,11 +3727,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3UvN3KzGBfuiURI49lAuHZxnpJreh1cDvdWJJb0Fnqw=\""
+          "Value": "\"eE2ygstFwyvR58P8Cxc3toEEU2U8YwEpjcsdSGZXbZQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Mar 2026 09:34:50 GMT"
+          "Value": "Thu, 26 Mar 2026 09:14:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3741,7 +3741,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7bp8upyu6c"
+          "Value": "4h2cjmlvat"
         },
         {
           "Name": "label",
@@ -3749,7 +3749,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-3UvN3KzGBfuiURI49lAuHZxnpJreh1cDvdWJJb0Fnqw="
+          "Value": "sha256-eE2ygstFwyvR58P8Cxc3toEEU2U8YwEpjcsdSGZXbZQ="
         }
       ]
     },
@@ -3764,7 +3764,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8279"
+          "Value": "8469"
         },
         {
           "Name": "Content-Type",
@@ -3772,11 +3772,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3UvN3KzGBfuiURI49lAuHZxnpJreh1cDvdWJJb0Fnqw=\""
+          "Value": "\"eE2ygstFwyvR58P8Cxc3toEEU2U8YwEpjcsdSGZXbZQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Mar 2026 09:34:50 GMT"
+          "Value": "Thu, 26 Mar 2026 09:14:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3786,7 +3786,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3UvN3KzGBfuiURI49lAuHZxnpJreh1cDvdWJJb0Fnqw="
+          "Value": "sha256-eE2ygstFwyvR58P8Cxc3toEEU2U8YwEpjcsdSGZXbZQ="
         }
       ]
     },

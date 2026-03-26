@@ -97,6 +97,33 @@
         box-shadow: 0 0 0 2px rgba(141, 182, 114, 0.2);
     }
 
+.pickup-time {
+    margin-bottom: 15px;
+}
+
+.pickup-slot-select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #1E5928;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    outline: none;
+    background-color: white;
+    color: #474747;
+    font-weight: 600;
+}
+
+    .pickup-slot-select:focus {
+        box-shadow: 0 0 0 2px rgba(141, 182, 114, 0.2);
+    }
+
+.pickup-slot-note {
+    margin-top: 8px;
+    color: #474747;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
 .order-submit-btn {
     width: 100%;
     padding: 12px 14px;

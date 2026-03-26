@@ -10,6 +10,7 @@ namespace TransferModels.Order
     {
         public int Id { get; set; }
         public DateTime CreatedAt { get; set; }
+        public DateTime? PickupAt { get; set; }
 
         public int ClientId { get; set; }
         public int OrderTypeId { get; set; }

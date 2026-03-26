@@ -1,7 +1,9 @@
 ﻿using GardenNookApi.Entities;
+using GardenNookApi.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using TransferModels.Kitchen;
 
 namespace GardenNookApi.Controllers
@@ -16,10 +18,12 @@ namespace GardenNookApi.Controllers
         private const string ToppingCategoryDishTokenRu = "к блюд";
 
         private readonly AppDbContext _db;
+        private readonly KitchenPickupFilterOptions _pickupFilterOptions;
 
-        public KitchenController(AppDbContext db)
+        public KitchenController(AppDbContext db, IOptions<KitchenPickupFilterOptions> pickupFilterOptions)
         {
             _db = db;
+            _pickupFilterOptions = pickupFilterOptions?.Value ?? new KitchenPickupFilterOptions();
         }
 
         [HttpGet("orders")]
@@ -39,6 +43,7 @@ namespace GardenNookApi.Controllers
                     o.Id,
                     o.Comment,
                     o.CreatedAt,
+                    o.PickupAt,
                     OrderType = o.OrderType != null ? o.OrderType.Name : null
                 })
                 .ToListAsync();
@@ -48,17 +53,55 @@ namespace GardenNookApi.Controllers
                 return Ok(new KitchenOrdersResponse());
             }
 
-            var orderIds = orderSources
+            var now = DateTime.Now;
+            var pickupWindow = TimeSpan.FromMinutes(Math.Max(0, _pickupFilterOptions.WindowMinutes));
+
+            var filteredOrderSources = orderSources
+                .Where(o =>
+                    !o.PickupAt.HasValue ||
+                    IsWithinPickupWindow(o.PickupAt.Value, now, pickupWindow))
+                .ToList();
+
+            if (filteredOrderSources.Count == 0)
+            {
+                return Ok(new KitchenOrdersResponse());
+            }
+
+            var overduePickupSources = filteredOrderSources
+                .Where(o => o.PickupAt <= now)
+                .OrderByDescending(o => o.PickupAt)
+                .ThenBy(o => o.Id)
+                .ToList();
+
+            var futurePickupSources = filteredOrderSources
+                .Where(o => o.PickupAt > now)
+                .OrderBy(o => o.PickupAt)
+                .ThenBy(o => o.Id)
+                .ToList();
+
+            var noPickupSources = filteredOrderSources
+                .Where(o => !o.PickupAt.HasValue)
+                .OrderBy(o => o.CreatedAt)
+                .ThenBy(o => o.Id)
+                .ToList();
+
+            var orderedOrderSources = overduePickupSources
+                .Concat(futurePickupSources)
+                .Concat(noPickupSources)
+                .ToList();
+
+            var orderIds = orderedOrderSources
                 .Select(o => o.Id)
                 .ToList();
 
-            var ordersById = orderSources.ToDictionary(
+            var ordersById = orderedOrderSources.ToDictionary(
                 o => o.Id,
                 o => new KitchenOrderDto
                 {
                     OrderId = o.Id,
                     Comment = o.Comment ?? string.Empty,
                     CreatedAt = o.CreatedAt,
+                    PickupAt = o.PickupAt,
                     OrderType = o.OrderType ?? string.Empty
                 });
 
@@ -151,7 +194,7 @@ namespace GardenNookApi.Controllers
                 });
             }
 
-            var resultOrders = orderSources
+            var resultOrders = orderedOrderSources
                 .Select(o => ordersById[o.Id])
                 .Where(o => o.Dishes.Count > 0 || o.Toppings.Count > 0)
                 .ToList();
@@ -175,6 +218,17 @@ namespace GardenNookApi.Controllers
             public int OrderDishItemId { get; set; }
             public string? Name { get; set; }
             public decimal Quantity { get; set; }
+        }
+
+        private static bool IsWithinPickupWindow(DateTime pickupAt, DateTime now, TimeSpan pickupWindow)
+        {
+            var delta = pickupAt - now;
+            if (delta < TimeSpan.Zero)
+            {
+                delta = delta.Negate();
+            }
+
+            return delta <= pickupWindow;
         }
     }
 }

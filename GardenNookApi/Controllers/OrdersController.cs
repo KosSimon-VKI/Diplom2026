@@ -19,6 +19,7 @@ namespace GardenNookApi.Controllers
     {
         private readonly AppDbContext _db;
         private readonly IPreparationStockService _stockService;
+        private readonly IPickupSchedulingService _pickupSchedulingService;
 
         // --- Правила категорий по кол-ву заказов ---
         // Под себя легко поменяешь.
@@ -46,10 +47,21 @@ namespace GardenNookApi.Controllers
         private static readonly int[] CoffeeModifierIngredientIds = [6, 8];
         private static readonly int[] ModifierExcludedDrinkIds = [5, 6, 43, 12];
 
-        public OrdersController(AppDbContext db, IPreparationStockService stockService)
+        public OrdersController(
+            AppDbContext db,
+            IPreparationStockService stockService,
+            IPickupSchedulingService pickupSchedulingService)
         {
             _db = db;
             _stockService = stockService;
+            _pickupSchedulingService = pickupSchedulingService;
+        }
+
+        [HttpGet("pickup-slots")]
+        [AllowAnonymous]
+        public ActionResult<PickupSlotsResponse> GetPickupSlots()
+        {
+            return Ok(_pickupSchedulingService.BuildSlotsResponse());
         }
 
         [HttpPost]
@@ -93,6 +105,21 @@ namespace GardenNookApi.Controllers
             var orderTypeExists = await _db.OrderTypes.AnyAsync(x => x.Id == request.OrderTypeId);
             if (!orderTypeExists)
                 return BadRequest("Некорректный тип заказа");
+
+            if (request.OrderTypeId != _pickupSchedulingService.TakeawayOrderTypeId)
+            {
+                request.PickupAt = null;
+            }
+            else if (request.PickupAt.HasValue)
+            {
+                var pickupAt = NormalizePickupAt(request.PickupAt.Value);
+                if (!_pickupSchedulingService.IsPickupAtAllowed(pickupAt))
+                {
+                    return BadRequest("Выбранное время самовывоза недоступно. Выберите слот из списка.");
+                }
+
+                request.PickupAt = pickupAt;
+            }
 
             // ---- соберём списки ID, чтобы разом подгрузить справочники ----
             var dishIds = request.Dishes.Select(x => x.DishId).Distinct().ToList();
@@ -199,6 +226,7 @@ namespace GardenNookApi.Controllers
                     StatusId = createdStatus.Value.Id,
                     OrderTypeId = request.OrderTypeId,
                     Comment = string.IsNullOrWhiteSpace(request.Comment) ? null : request.Comment,
+                    PickupAt = request.PickupAt,
                     DiscountId = discountId,
                     TotalCalories = 0m,
                     TotalPrice = 0m
@@ -699,6 +727,22 @@ namespace GardenNookApi.Controllers
             }
 
             return null;
+        }
+
+        private static DateTime NormalizePickupAt(DateTime value)
+        {
+            var local = value.Kind == DateTimeKind.Utc
+                ? value.ToLocalTime()
+                : value;
+
+            return new DateTime(
+                local.Year,
+                local.Month,
+                local.Day,
+                local.Hour,
+                local.Minute,
+                local.Second,
+                DateTimeKind.Unspecified);
         }
 
         private sealed record ModifierInfo(string? Name, int? CategoryId);

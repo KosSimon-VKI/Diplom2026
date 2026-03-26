@@ -2,6 +2,7 @@
 const CURRENT_USER_STORAGE_KEY = 'gardenNook.currentUser.v1';
 const CART_STORAGE_PREFIX = 'gardenNook.cart.v2.';
 const LEGACY_CART_STORAGE_KEY = 'gardenNook.cart.v1';
+const DEFAULT_TAKEAWAY_ORDER_TYPE_ID = 2;
 
 function getCartStorageKey() {
     const currentUser = (localStorage.getItem(CURRENT_USER_STORAGE_KEY) || 'guest').trim();
@@ -32,6 +33,10 @@ function saveCart() {
 }
 
 let cart = loadCart();
+let pickupTakeawayOrderTypeId = DEFAULT_TAKEAWAY_ORDER_TYPE_ID;
+let pickupSlots = [];
+let pickupSlotsLoaded = false;
+let pickupSlotsLoadError = null;
 
 // ===== бейдж над кнопкой корзины =====
 function updateCartBadge() {
@@ -355,11 +360,181 @@ function getSelectedOrderTypeId() {
     return el ? parseInt(el.value, 10) : 1;
 }
 
+function hasPickupControls() {
+    return !!document.getElementById('pickup-slot-select');
+}
+
+function isTakeawayOrderType(orderTypeId) {
+    return orderTypeId === pickupTakeawayOrderTypeId;
+}
+
+function getPickupSlotSelectEl() {
+    return document.getElementById('pickup-slot-select');
+}
+
+function getPickupTimeSectionEl() {
+    return document.getElementById('pickup-time-section');
+}
+
+function getPickupSlotNoteEl() {
+    return document.getElementById('pickup-slot-note');
+}
+
+function setPickupSlotNote(message) {
+    const note = getPickupSlotNoteEl();
+    if (!note) return;
+
+    note.textContent = message;
+    note.classList.remove('hidden');
+}
+
+function clearPickupSlotNote() {
+    const note = getPickupSlotNoteEl();
+    if (!note) return;
+
+    note.textContent = '';
+    note.classList.add('hidden');
+}
+
+function renderPickupSlotOptions({ keepSelection = true } = {}) {
+    const select = getPickupSlotSelectEl();
+    if (!select) return;
+
+    const prevValue = keepSelection ? select.value : '';
+    select.innerHTML = '';
+
+    pickupSlots.forEach(slot => {
+        const option = document.createElement('option');
+        option.value = slot.value;
+        option.textContent = slot.label;
+        select.appendChild(option);
+    });
+
+    if (prevValue && Array.from(select.options).some(x => x.value === prevValue)) {
+        select.value = prevValue;
+        return;
+    }
+
+    if (pickupSlots.length > 0) {
+        select.value = pickupSlots[0].value;
+        return;
+    }
+
+    select.value = '';
+}
+
+function clearPickupSlotSelection() {
+    const select = getPickupSlotSelectEl();
+    if (!select) return;
+    select.value = '';
+}
+
+function updatePickupSlotVisibility() {
+    if (!hasPickupControls()) {
+        return;
+    }
+
+    const section = getPickupTimeSectionEl();
+    if (!section) return;
+
+    const orderTypeId = getSelectedOrderTypeId();
+    if (!isTakeawayOrderType(orderTypeId)) {
+        section.classList.add('hidden');
+        clearPickupSlotSelection();
+        clearPickupSlotNote();
+        return;
+    }
+
+    section.classList.remove('hidden');
+
+    if (pickupSlotsLoadError) {
+        setPickupSlotNote('Не удалось загрузить слоты самовывоза. Можно оформить заказ без времени.');
+        return;
+    }
+
+    if (!pickupSlotsLoaded) {
+        setPickupSlotNote('Загружаем доступные слоты...');
+        return;
+    }
+
+    if (pickupSlots.length === 0) {
+        setPickupSlotNote('На сегодня нет доступных слотов. Можно оформить заказ без времени.');
+        return;
+    }
+
+    const select = getPickupSlotSelectEl();
+    if (select && !(select.value ?? '').trim()) {
+        select.value = pickupSlots[0].value;
+    }
+
+    clearPickupSlotNote();
+}
+
+function getSelectedPickupAt(orderTypeId) {
+    if (!isTakeawayOrderType(orderTypeId)) {
+        return null;
+    }
+
+    const select = getPickupSlotSelectEl();
+    if (!select) {
+        return null;
+    }
+
+    const value = (select.value ?? '').trim();
+    return value || null;
+}
+
+async function loadPickupSlots() {
+    if (!hasPickupControls()) {
+        return;
+    }
+
+    pickupSlotsLoaded = false;
+    pickupSlotsLoadError = null;
+    updatePickupSlotVisibility();
+
+    try {
+        const response = await fetch(`${window.API_BASE}/api/orders/pickup-slots`, {
+            method: 'GET',
+            credentials: 'include'
+        });
+
+        if (!response.ok) {
+            throw new Error(`Pickup slots request failed with status ${response.status}`);
+        }
+
+        const payload = await response.json();
+        const parsedOrderTypeId = Number(payload?.takeawayOrderTypeId);
+
+        pickupTakeawayOrderTypeId = Number.isFinite(parsedOrderTypeId)
+            ? parsedOrderTypeId
+            : DEFAULT_TAKEAWAY_ORDER_TYPE_ID;
+
+        pickupSlots = Array.isArray(payload?.slots)
+            ? payload.slots
+                .filter(x => x && typeof x.value === 'string' && typeof x.label === 'string')
+                .map(x => ({ value: x.value, label: x.label }))
+            : [];
+
+        pickupSlotsLoaded = true;
+        pickupSlotsLoadError = null;
+        renderPickupSlotOptions();
+    } catch {
+        pickupSlotsLoaded = true;
+        pickupSlotsLoadError = 'failed';
+        pickupSlots = [];
+        renderPickupSlotOptions({ keepSelection: false });
+    }
+
+    updatePickupSlotVisibility();
+}
+
 //================ DTO =================//
-function buildOrderRequest(orderTypeId, comment) {
+function buildOrderRequest(orderTypeId, comment, pickupAt) {
     const dto = {
         orderTypeId: orderTypeId,
         comment: comment ?? null,
+        pickupAt: pickupAt ?? null,
         dishes: [],
         drinks: [],
         toppings: []
@@ -433,8 +608,9 @@ async function submitOrder() {
     const btn = document.getElementById('btn-submit-order');
     const orderTypeId = getSelectedOrderTypeId();
     const comment = document.getElementById('order-comment')?.value ?? null;
+    const pickupAt = getSelectedPickupAt(orderTypeId);
 
-    const dto = buildOrderRequest(orderTypeId, comment);
+    const dto = buildOrderRequest(orderTypeId, comment, pickupAt);
 
     if (!dto.dishes.length && !dto.drinks.length && !dto.toppings.length) {
         showOrderError('Корзина пуста');
@@ -488,6 +664,8 @@ async function submitOrder() {
 
         const c = document.getElementById('order-comment');
         if (c) c.value = '';
+        renderPickupSlotOptions({ keepSelection: false });
+        updatePickupSlotVisibility();
 
         showOrderSuccess(`Заказ №${data.orderId} оформлен. Статус: ${data.status}`);
 
@@ -505,6 +683,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     renderCart();
     initMenuQuantities();
+
+    if (hasPickupControls()) {
+        renderPickupSlotOptions({ keepSelection: false });
+        document.querySelectorAll('input[name="orderType"]').forEach(el => {
+            el.addEventListener('change', updatePickupSlotVisibility);
+        });
+
+        updatePickupSlotVisibility();
+        loadPickupSlots();
+    }
 
     const btn = document.getElementById('btn-submit-order');
     if (btn) btn.addEventListener('click', submitOrder);

@@ -259,6 +259,7 @@ public partial class AppDbContext : DbContext
         {
             entity.HasKey(e => e.Id).HasName("PK__Orders__3214EC0762C21CEE");
 
+            entity.Property(e => e.PickupAt).HasColumnType("datetime2");
             entity.Property(e => e.StatusId).HasColumnName("StatusID");
             entity.Property(e => e.TotalCalories).HasColumnType("decimal(10, 2)");
             entity.Property(e => e.TotalPrice).HasColumnType("decimal(10, 2)");

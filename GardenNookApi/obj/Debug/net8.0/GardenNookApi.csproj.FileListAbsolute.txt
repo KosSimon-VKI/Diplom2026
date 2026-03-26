@@ -148,3 +148,4 @@ C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookApi\obj\Debug\net8.0\r
 C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookApi\obj\Debug\net8.0\GardenNookApi.pdb
 C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookApi\obj\Debug\net8.0\GardenNookApi.genruntimeconfig.cache
 C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookApi\obj\Debug\net8.0\ref\GardenNookApi.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookApi\obj\Debug\net8.0\GardenNookApi.sourcelink.json

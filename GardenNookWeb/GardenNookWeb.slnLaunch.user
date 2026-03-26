@@ -1,0 +1,28 @@
+[
+  {
+    "Name": "API + Web",
+    "Projects": [
+      {
+        "Path": "..\\GardenNookApi\\GardenNookApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "GardenNookWeb.csproj",
+        "Action": "Start"
+      }
+    ]
+  },
+  {
+    "Name": "API + WPF",
+    "Projects": [
+      {
+        "Path": "..\\GardenNookApi\\GardenNookApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\GardenNookWpf\\GardenNookWpf.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,255 @@
+﻿@model TransferModels.Menu.MenuResponse
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Меню</title>
+    <link rel="stylesheet" asp-append-version="true" href="/css/menu.css">
+    <link rel="stylesheet" asp-append-version="true" href="/css/modal.css">
+    <link rel="stylesheet" asp-append-version="true" href="/css/drink-modifier-modal.css">
+    <link rel="stylesheet" asp-append-version="true" href="/css/cart.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Боковое меню -->
+        <div class="sidebar">
+            <button class="back-btn" onclick="location.href='/'">
+                <img src="/Images/back.png" class="btn-image" />
+            </button>
+
+            <div class="nav-links">
+                <button class="nav-btn active" data-section="menu">
+                    <img src="/Images/menu.png" class="btn-image" />
+                </button>
+
+                <!-- КОРЗИНА -> отдельная страница -->
+                <button class="nav-btn cart-nav-btn" type="button" onclick="location.href='/Cart'">
+                    <span id="cart-badge" class="cart-badge hidden">0</span>
+                    <img src="/Images/cart.png" class="btn-image" />
+                </button>
+
+                <button class="nav-btn" type="button" onclick="location.href='/Profile'">
+                    <img src="/Images/avatar.png" class="btn-image" />
+                </button>
+            </div>
+        </div>
+
+        <!-- Центральная область -->
+        <div class="main-content">
+            <div class="content-header">
+                <h1>МЕНЮ</h1>
+            </div>
+
+            <!-- Список товаров -->
+            <div class="items-list" id="items-list">
+                <!-- Блюда -->
+                @if (Model?.Dishes != null && Model.Dishes.Any())
+                {
+                    foreach (var item in Model.Dishes)
+                    {
+                                <div class="item-card @(item.IsAvailable ? "" : "item-card-unavailable")" data-type="dishes" data-item-id="@item.Id" data-category="@item.Category" data-available="@(item.IsAvailable ? "true" : "false")">
+                                    <img src="@item.ImageUrl" alt="@item.Name" class="item-image" onerror="this.src='/images/placeholder.png'">
+                                    <div class="item-info">
+                                        <div class="item-name-row">
+                                            <div class="item-name">@item.Name</div>
+                                            @if (!string.IsNullOrWhiteSpace(item.WeightLabel))
+                                            {
+                                                <div class="item-volume">@item.WeightLabel</div>
+                                            }
+                                        </div>
+                                        <div class="item-category">@item.Category</div>
+                                        <div class="item-price">@item.Price ₽</div>
+                                        <div class="item-details">
+                                            <span>Ккал: @item.Calories</span> |
+                                            <span>Б: @item.Proteins</span> |
+                                            <span>Ж: @item.Fats</span> |
+                                            <span>У: @item.Carbs</span>
+                                            <span class="item-details-note">(на порцию)</span>
+
+                                        </div>
+                                        <div class="item-quantity">
+                                            <span class="quantity-label">Количество:</span>
+                                            <span class="quantity">0</span>
+                                            <button class="quantity-btn plus" onclick="openToppingsModal(this, 'К блюдам')" @(!item.IsAvailable ? "disabled" : null)>Добавить</button>
+                                            @if (!item.IsAvailable)
+                                            {
+                                                <span class="item-unavailable-label">Недоступно</span>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                    }
+                }
+
+                <!-- Напитки -->
+                @if (Model?.Drinks != null && Model.Drinks.Any())
+                {
+                    foreach (var item in Model.Drinks)
+                    {
+                                <div class="item-card @(item.IsAvailable ? "" : "item-card-unavailable")" data-type="drinks" data-item-id="@item.Id" data-category="@item.Category" data-drink-category-id="@(item.CategoryId?.ToString() ?? string.Empty)" data-available="@(item.IsAvailable ? "true" : "false")">
+                                    <img src="@item.ImageUrl" alt="@item.Name" class="item-image" onerror="this.src='/images/placeholder.png'">
+                                    <div class="item-info">
+                                        <div class="item-name-row">
+                                            <div class="item-name">@item.Name</div>
+                                            @if (!string.IsNullOrWhiteSpace(item.VolumeLabel))
+                                            {
+                                                <div class="item-volume">@item.VolumeLabel</div>
+                                            }
+                                        </div>
+                                        <div class="item-category">@item.Category</div>
+                                        <div class="item-price">@item.Price ₽</div>
+                                        <div class="item-details">
+                                            <span>Ккал: @item.Calories</span> |
+                                            <span>Б: @item.Proteins</span> |
+                                            <span>Ж: @item.Fats</span> |
+                                            <span>У: @item.Carbs</span>
+                                            <span class="item-details-note">(на порцию)</span>
+                                        </div>
+                                        <div class="item-quantity">
+                                            <span class="quantity-label">Количество:</span>
+                                            <span class="quantity">0</span>
+                                            <button class="quantity-btn plus" onclick="openDrinkModifiersModal(this)" @(!item.IsAvailable ? "disabled" : null)>Добавить</button>
+                                            @if (!item.IsAvailable)
+                                            {
+                                                <span class="item-unavailable-label">Недоступно</span>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                    }
+                }
+
+                <!-- Добавки -->
+                @if (Model?.Toppings != null && Model.Toppings.Any())
+                {
+                    foreach (var item in Model.Toppings)
+                    {
+                                <div class="item-card @(item.IsAvailable ? "" : "item-card-unavailable")" data-type="toppings" data-item-id="@item.Id" data-category="@item.Category" data-available="@(item.IsAvailable ? "true" : "false")">
+                                    <div class="item-info">
+                                        <div class="item-name">@item.Name</div>
+                                        <div class="item-category">@item.Category</div>
+                                        <div class="item-price">@item.Price ₽</div>
+                                        <div class="item-quantity">
+                                            <span class="quantity-label">Количество:</span>
+                                            <span class="quantity">0</span>
+                                            <button class="quantity-btn plus" onclick="addStandaloneTopping(this.closest('.item-card'))" @(!item.IsAvailable ? "disabled" : null)>Добавить</button>
+                                            @if (!item.IsAvailable)
+                                            {
+                                                <span class="item-unavailable-label">Недоступно</span>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                    }
+                }
+
+                @if ((Model?.Dishes == null || !Model.Dishes.Any()) &&
+                    (Model?.Drinks == null || !Model.Drinks.Any()) &&
+                    (Model?.Toppings == null || !Model.Toppings.Any()))
+                {
+                        <div class="no-items">Меню пусто</div>
+                }
+            </div>
+        </div>
+
+        <!-- Правая панель (категории/фильтры/поиск, без корзины) -->
+        <div class="filters">
+
+            <div class="search-box">
+                <input type="text" placeholder="Поиск..." id="search-input">
+            </div>
+
+            <div class="filters-section">
+                <h3 class="filters-title">Фильтры</h3>
+                <div class="filter-group">
+                    <label>Цена:</label>
+                    <input type="range" min="0" max="1000" value="1000" class="price-filter" id="price-filter">
+                    <div class="price-range">0 - <span id="price-value">1000</span> ₽</div>
+                </div>
+            </div>
+            
+            <div class="filters-section categories-section">
+                <h3 class="filters-title">Категории</h3>
+                <div class="main-categories">
+                    <button class="main-category-btn active" data-type="all">Все</button>
+                    <button class="main-category-btn" data-type="dishes">Блюда (@Model?.Dishes?.Count)</button>
+                    <button class="main-category-btn" data-type="drinks">Напитки (@Model?.Drinks?.Count)</button>
+                    <button class="main-category-btn" data-type="toppings">Добавки (@Model?.Toppings?.Count)</button>
+                </div>
+
+                <div class="subcategories" id="subcategories">
+                    <!-- Будет заполнено динамически -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== МОДАЛКА МОДИФИКАТОРОВ НАПИТКА ===== -->
+    <div id="drink-modifier-modal" class="modal hidden">
+        <div class="modal-overlay" onclick="closeDrinkModifiersModal()"></div>
+
+        <div class="modal-content drink-modifier-modal-content">
+            <div class="modal-header">
+                <h2>Модификаторы напитка</h2>
+            </div>
+
+            <div class="drink-modifier-body">
+                <div class="drink-modifier-section">
+                    <div class="drink-modifier-title">Молоко</div>
+                    <div id="drink-modifier-milk-options" class="drink-modifier-options"></div>
+                </div>
+
+                <div class="drink-modifier-section">
+                    <div class="drink-modifier-title">Кофе</div>
+                    <div id="drink-modifier-coffee-options" class="drink-modifier-options"></div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="modal-btn" onclick="closeDrinkModifiersModal()">Отмена</button>
+                <button class="modal-btn" id="confirm-drink-modifiers-btn" onclick="confirmDrinkModifiers()">Далее</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== МОДАЛКА ТОППИНГОВ ===== -->
+    <div id="topping-modal" class="modal hidden">
+        <div class="modal-overlay" onclick="closeToppingsModal()"></div>
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Добавки</h2>
+            </div>
+
+            <div id="topping-list" class="topping-list">
+                <!-- toppings here -->
+            </div>
+
+            <div class="modal-footer">
+                <button class="modal-btn" onclick="closeToppingsModal()">Отмена</button>
+                <button class="modal-btn" id="confirm-toppings-btn" onclick="confirmToppings()">Без добавок</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ДАННЫЕ -->
+    <script id="menu-data">
+        window.menuData = {
+            toppings: @Html.Raw(Json.Serialize(Model?.Toppings ?? new System.Collections.Generic.List<TransferModels.Menu.ToppingDto>())),
+            drinkModifiers: @Html.Raw(Json.Serialize(Model?.DrinkModifiers ?? new TransferModels.Menu.DrinkModifierCatalogDto()))
+        };
+    </script>
+
+    <!-- СКРИПТЫ -->
+    <script src="/js/menu.js" asp-append-version="true"></script>
+    <script src="/js/drink-modifier-modal.js" asp-append-version="true"></script>
+    <script src="/js/modal.js" asp-append-version="true"></script>
+    <script src="/js/cart.js" asp-append-version="true"></script>
+</body>
+</html>

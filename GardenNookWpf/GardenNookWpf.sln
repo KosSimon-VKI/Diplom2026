@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GardenNookWpf", "GardenNookWpf.csproj", "{4EB6663D-C4DC-4025-8622-A971A6E1D64B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GardenNookWeb", "..\GardenNookWeb\GardenNookWeb.csproj", "{B8C152B4-9309-4ADB-8FD0-CF3CF3A0BD72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GardenNookApi", "..\GardenNookApi\GardenNookApi.csproj", "{A8B8293B-38C0-495F-ADE0-700DAE6F1277}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransferModels", "..\TransferModels\TransferModels.csproj", "{53C6B2E6-662C-4FA3-9EA7-A7D7AA4A1AEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EB6663D-C4DC-4025-8622-A971A6E1D64B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EB6663D-C4DC-4025-8622-A971A6E1D64B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EB6663D-C4DC-4025-8622-A971A6E1D64B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EB6663D-C4DC-4025-8622-A971A6E1D64B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8C152B4-9309-4ADB-8FD0-CF3CF3A0BD72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8C152B4-9309-4ADB-8FD0-CF3CF3A0BD72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8C152B4-9309-4ADB-8FD0-CF3CF3A0BD72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8C152B4-9309-4ADB-8FD0-CF3CF3A0BD72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8B8293B-38C0-495F-ADE0-700DAE6F1277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8B8293B-38C0-495F-ADE0-700DAE6F1277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8B8293B-38C0-495F-ADE0-700DAE6F1277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8B8293B-38C0-495F-ADE0-700DAE6F1277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53C6B2E6-662C-4FA3-9EA7-A7D7AA4A1AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53C6B2E6-662C-4FA3-9EA7-A7D7AA4A1AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53C6B2E6-662C-4FA3-9EA7-A7D7AA4A1AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53C6B2E6-662C-4FA3-9EA7-A7D7AA4A1AEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

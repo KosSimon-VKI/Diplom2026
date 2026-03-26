@@ -1,0 +1,222 @@
+.app-container {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.profile-card {
+    background: white;
+    border: 2px solid #6F6864;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.profile-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.profile-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+    align-items: baseline;
+}
+
+.profile-label {
+    font-weight: 700;
+    color: #1E5928;
+    min-width: 120px;
+    font-size: 24px;
+}
+
+.profile-value {
+    color: #333;
+    font-weight: 600;
+    font-size: 24px;
+    word-break: break-word;
+}
+
+.order-history-empty {
+    color: #777;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.order-history-item {
+    border: 2px solid #91A56E;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
+    background: #fcfffa;
+}
+
+.order-history-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.order-history-title {
+    font-weight: 800;
+    color: #333;
+    font-size: 20px;
+}
+
+.order-history-status {
+    font-weight: 700;
+    color: #1E5928;
+    border: 2px solid #1E5928;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 18px;
+    background: #f3fff3;
+}
+
+.order-history-status.cancelled {
+    color: #742C27;
+    border-color: #742C27;
+    background: #fff5f5;
+}
+
+.order-history-meta {
+    color: #555;
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.order-history-comment {
+    color: #555;
+    font-size: 24px;
+    margin-top: 8px;
+}
+
+.order-history-composition {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px dashed #c7d8a7;
+}
+
+.order-history-composition.empty {
+    color: #777;
+    font-size: 23px;
+}
+
+.order-history-composition-title {
+    font-size: 23px;
+    font-weight: 700;
+    color: #3d4f2f;
+    margin-bottom: 8px;
+}
+
+.order-composition-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.order-composition-item {
+    border: 1px solid #dbe7c8;
+    border-radius: 8px;
+    background: #fff;
+    padding: 8px 10px;
+}
+
+.order-composition-name {
+    color: #2d2d2d;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.order-composition-meta {
+    color: #5a5a5a;
+    font-size: 23px;
+}
+
+.order-composition-addons-title {
+    color: #4a6040;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+
+.order-composition-addons {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.order-composition-addon {
+    color: #555;
+    font-size: 22px;
+}
+
+.order-cancel-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: 2px solid #742C27;
+    background: white;
+    color: #742C27;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+
+.order-cancel-btn:hover {
+    background: #742C27;
+    color: white;
+}
+
+.order-cancel-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.profile-error {
+    margin-bottom: 10px;
+    padding: 10px 12px;
+    border: 2px solid #742C27;
+    background: #fff5f5;
+    color: #742C27;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.profile-success {
+    margin-bottom: 10px;
+    padding: 10px 12px;
+    border: 2px solid #1E5928;
+    background: #f3fff3;
+    color: #1E5928;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+}

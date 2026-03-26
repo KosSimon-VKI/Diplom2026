@@ -1,0 +1,137 @@
+﻿/* ===== MODAL ===== */
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+}
+
+    .modal.hidden {
+        display: none;
+    }
+
+.modal-btn {
+    padding: 10px 20px;
+    border: 2px solid #1E5928;
+    background: white;
+    color: #474747;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+.modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: relative;
+    width: 580px;
+    max-width: calc(100vw - 24px);
+    max-height: 80vh;
+    margin: 100px auto;
+    background: #fff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.modal-header,
+.modal-footer {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-footer {
+    border-top: 1px solid #eee;
+    border-bottom: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.topping-list {
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.topping-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 70px 160px;
+    align-items: start;
+    gap: 28px;
+    padding: 14px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.topping-item.topping-item-unavailable {
+    opacity: 0.65;
+}
+
+.topping-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.topping-price {
+    text-align: right;
+    font-weight: 500;
+}
+
+.topping-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.topping-qty-controls {
+    display: grid;
+    grid-template-columns: 32px 44px 32px;
+    column-gap: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.topping-qty {
+    min-width: 44px;
+}
+
+.topping-qty-controls button {
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+        font-weight: bold;
+        border-radius: 50%;
+        border: 2px solid #1E5928;
+    background: #91A56E;
+    color: #fff;
+    cursor: pointer;
+}
+
+.topping-qty-controls button:disabled {
+    cursor: not-allowed;
+    background: #d3d3d3;
+    border-color: #b7b7b7;
+    color: #707070;
+}
+
+.topping-unavailable {
+    color: #742C27;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: right;
+    line-height: 1;
+}

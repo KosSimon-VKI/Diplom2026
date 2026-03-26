@@ -1,0 +1,73 @@
+﻿{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch GardenNookApi",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-gardennookapi",
+      "program": "${workspaceFolder}/GardenNookApi/bin/Debug/net8.0/GardenNookApi.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/GardenNookApi",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    {
+      "name": "Launch GardenNookWeb",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-gardennookweb",
+      "program": "${workspaceFolder}/GardenNookWeb/bin/Debug/net8.0/GardenNookWeb.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/GardenNookWeb",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    {
+      "name": "Launch GardenNookWpf",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-gardennookwpf",
+      "program": "${workspaceFolder}/GardenNookWpf/bin/Debug/net8.0-windows/GardenNookWpf.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/GardenNookWpf",
+      "stopAtEntry": false
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Launch API + Web",
+      "configurations": [
+        "Launch GardenNookApi",
+        "Launch GardenNookWeb"
+      ]
+    },
+    {
+      "name": "Launch API + WPF",
+      "configurations": [
+        "Launch GardenNookApi",
+        "Launch GardenNookWpf"
+      ]
+    },
+    {
+      "name": "Launch API + Web + WPF",
+      "configurations": [
+        "Launch GardenNookApi",
+        "Launch GardenNookWeb",
+        "Launch GardenNookWpf"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+@model GardenNookWeb.Models.RegistrationModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="~/css/registration.css" asp-append-version="true" />
+</head>
+<body>
+
+<div class="container">
+    <div class="left">
+        <img src="~/Images/logo.png" />
+    </div>
+
+    <div class="right">
+        <div class="form-wrapper">
+            <h2>Регистрация</h2>
+
+            <form method="post" id="registration-form">
+                <label>ФИО</label>
+                <input asp-for="FullName" />
+                <span asp-validation-for="FullName" class="error"></span>
+
+                <label>Телефон</label>
+                <input asp-for="PhoneNumber" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (999) 123-45-67" />
+                <span asp-validation-for="PhoneNumber" class="error"></span>
+
+                <label>Пароль</label>
+                <input asp-for="Password" type="password" />
+                <span asp-validation-for="Password" class="error"></span>
+
+                <button type="submit">Зарегистрироваться</button>
+
+                <button type="button" class="secondary" onclick="window.location.href='/Authorization/AuthorizationView'">
+                    Авторизация
+                </button>
+
+                @if (Model != null && !string.IsNullOrEmpty(Model.Error))
+                {
+                    <div class="error">@Model.Error</div>
+                }
+
+                @if (Model != null && !string.IsNullOrEmpty(Model.SuccsesMessage))
+                {
+                    <div class="success">@Model.SuccsesMessage</div>
+                }
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        const input = document.getElementById("PhoneNumber");
+        const form = document.getElementById("registration-form");
+        if (!input || !form) return;
+
+        function toDigits(value) {
+            let digits = (value || "").replace(/\D/g, "");
+            if (!digits) return "";
+
+            if (digits[0] === "7") {
+                digits = digits.slice(1);
+            }
+
+            return ("7" + digits).slice(0, 11);
+        }
+
+        function toMask(digits) {
+            if (!digits) return "";
+            const rest = digits.slice(1);
+
+            let masked = "+7";
+            if (rest.length > 0) masked += " (" + rest.slice(0, 3);
+            if (rest.length >= 3) masked += ")";
+            if (rest.length > 3) masked += " " + rest.slice(3, 6);
+            if (rest.length > 6) masked += "-" + rest.slice(6, 8);
+            if (rest.length > 8) masked += "-" + rest.slice(8, 10);
+
+            return masked;
+        }
+
+        function applyMask() {
+            input.value = toMask(toDigits(input.value));
+        }
+
+        applyMask();
+        input.addEventListener("input", applyMask);
+        form.addEventListener("submit", function () {
+            input.value = toDigits(input.value);
+        });
+    })();
+</script>
+
+</body>
+</html>

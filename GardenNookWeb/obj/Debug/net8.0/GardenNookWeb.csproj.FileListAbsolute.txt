@@ -1,0 +1,229 @@
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\bin\Debug\net8.0\appsettings.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.staticwebassets.runtime.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.staticwebassets.endpoints.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.exe
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.deps.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.runtimeconfig.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\bin\Debug\net8.0\TransferModels.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\bin\Debug\net8.0\TransferModels.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.AssemblyInfo.cs
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.RazorAssemblyInfo.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.RazorAssemblyInfo.cs
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\scopedcss\bundle\GardenNookWeb.styles.css
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\scopedcss\projectbundle\GardenNookWeb.bundle.scp.css
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.GardenNookWeb.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.GardenNookWeb.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.build.GardenNookWeb.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.GardenNookWeb.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.GardenNookWeb.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\GardenNo.3EC9C60B.Up2Date
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\refint\GardenNookWeb.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.genruntimeconfig.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\GardenNookWeb\obj\Debug\net8.0\ref\GardenNookWeb.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\bin\Debug\net8.0\appsettings.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.staticwebassets.runtime.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.staticwebassets.endpoints.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.exe
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.deps.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.runtimeconfig.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\bin\Debug\net8.0\TransferModels.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\bin\Debug\net8.0\TransferModels.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.AssemblyInfo.cs
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.RazorAssemblyInfo.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.RazorAssemblyInfo.cs
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\scopedcss\bundle\GardenNookWeb.styles.css
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\scopedcss\projectbundle\GardenNookWeb.bundle.scp.css
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.GardenNookWeb.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.GardenNookWeb.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.build.GardenNookWeb.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.GardenNookWeb.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.GardenNookWeb.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\GardenNo.3EC9C60B.Up2Date
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\refint\GardenNookWeb.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.genruntimeconfig.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v3\GardenNookWeb\obj\Debug\net8.0\ref\GardenNookWeb.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\bin\Debug\net8.0\appsettings.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.staticwebassets.endpoints.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.staticwebassets.runtime.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.exe
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.deps.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.runtimeconfig.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\bin\Debug\net8.0\TransferModels.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\bin\Debug\net8.0\TransferModels.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.AssemblyInfo.cs
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.RazorAssemblyInfo.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.RazorAssemblyInfo.cs
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\scopedcss\bundle\GardenNookWeb.styles.css
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\scopedcss\projectbundle\GardenNookWeb.bundle.scp.css
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.GardenNookWeb.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.GardenNookWeb.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.build.GardenNookWeb.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.GardenNookWeb.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.GardenNookWeb.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\GardenNo.3EC9C60B.Up2Date
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\refint\GardenNookWeb.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.genruntimeconfig.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\GardenNookWeb\obj\Debug\net8.0\ref\GardenNookWeb.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\bin\Debug\net8.0\appsettings.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.staticwebassets.runtime.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.staticwebassets.endpoints.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.exe
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.deps.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.runtimeconfig.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\bin\Debug\net8.0\TransferModels.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\bin\Debug\net8.0\TransferModels.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.AssemblyInfo.cs
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.RazorAssemblyInfo.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.RazorAssemblyInfo.cs
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\scopedcss\bundle\GardenNookWeb.styles.css
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\scopedcss\projectbundle\GardenNookWeb.bundle.scp.css
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.GardenNookWeb.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.GardenNookWeb.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.build.GardenNookWeb.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.GardenNookWeb.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.GardenNookWeb.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\GardenNo.3EC9C60B.Up2Date
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\refint\GardenNookWeb.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.genruntimeconfig.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\GardenNookWeb\obj\Debug\net8.0\ref\GardenNookWeb.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\bin\Debug\net8.0\appsettings.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.staticwebassets.endpoints.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.staticwebassets.runtime.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.exe
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.deps.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.runtimeconfig.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\bin\Debug\net8.0\GardenNookWeb.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\bin\Debug\net8.0\TransferModels.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\bin\Debug\net8.0\TransferModels.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.AssemblyInfo.cs
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.RazorAssemblyInfo.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.RazorAssemblyInfo.cs
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\scopedcss\bundle\GardenNookWeb.styles.css
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\scopedcss\projectbundle\GardenNookWeb.bundle.scp.css
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.GardenNookWeb.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.GardenNookWeb.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.build.GardenNookWeb.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.GardenNookWeb.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.GardenNookWeb.props
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\GardenNo.3EC9C60B.Up2Date
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\refint\GardenNookWeb.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\GardenNookWeb.genruntimeconfig.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\GardenNookWeb\obj\Debug\net8.0\ref\GardenNookWeb.dll

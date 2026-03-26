@@ -1,0 +1,73 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Профиль</title>
+
+    <link rel="stylesheet" asp-append-version="true" href="/css/menu.css">
+    <link rel="stylesheet" asp-append-version="true" href="/css/profile.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <button class="back-btn" onclick="location.href='/'">
+                <img src="/Images/back.png" class="btn-image" />
+            </button>
+
+            <div class="nav-links">
+                <button class="nav-btn" type="button" onclick="location.href='/Menu'">
+                    <img src="/Images/menu.png" class="btn-image" />
+                </button>
+
+                <button class="nav-btn cart-nav-btn" type="button" onclick="location.href='/Cart'">
+                    <span id="cart-badge" class="cart-badge hidden">0</span>
+                    <img src="/Images/cart.png" class="btn-image" />
+                </button>
+
+                <button class="nav-btn active" type="button">
+                    <img src="/Images/avatar.png" class="btn-image" />
+                </button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="content-header">
+                <h1>ПРОФИЛЬ</h1>
+            </div>
+
+            <div class="profile-grid">
+                <div class="profile-card">
+                    <h2 class="profile-title">Клиент</h2>
+
+                    <div class="profile-row">
+                        <span class="profile-label">ФИО:</span>
+                        <span id="profile-fullname" class="profile-value">-</span>
+                    </div>
+
+                    <div class="profile-row">
+                        <span class="profile-label">Категория:</span>
+                        <span id="profile-category" class="profile-value">-</span>
+                    </div>
+                </div>
+
+                <div class="profile-card">
+                    <h2 class="profile-title">История заказов</h2>
+
+                    <div id="profile-error" class="profile-error hidden"></div>
+                    <div id="profile-success" class="profile-success hidden"></div>
+
+                    <div id="profile-orders"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/profile.js" asp-append-version="true"></script>
+</body>
+</html>
+

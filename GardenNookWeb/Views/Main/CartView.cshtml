@@ -1,0 +1,96 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Корзина</title>
+
+    <link rel="stylesheet" asp-append-version="true" href="/css/menu.css">
+    <link rel="stylesheet" asp-append-version="true" href="/css/cart.css">
+    <link rel="stylesheet" asp-append-version="true" href="/css/checkout.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Боковое меню -->
+        <div class="sidebar">
+            <button class="back-btn" onclick="location.href='/'">
+                <img src="/Images/back.png" class="btn-image" />
+            </button>
+
+            <div class="nav-links">
+                <button class="nav-btn" type="button" onclick="location.href='/Menu'">
+                    <img src="/Images/menu.png" class="btn-image" />
+                </button>
+
+                <button class="nav-btn active cart-nav-btn" type="button">
+                    <span id="cart-badge" class="cart-badge hidden">0</span>
+                    <img src="/Images/cart.png" class="btn-image" />
+                </button>
+
+                <button class="nav-btn" type="button" onclick="location.href='/Profile'">
+                    <img src="/Images/avatar.png" class="btn-image" />
+                </button>
+            </div>
+        </div>
+
+        <!-- Центральная область -->
+        <div class="main-content">
+            <div class="content-header">
+                <h1>КОРЗИНА</h1>
+            </div>
+
+            <div class="checkout-grid">
+                <div class="checkout-card">
+                    <h2 class="checkout-title">Товары</h2>
+                    <div id="cart-items"></div>
+
+                    <div class="checkout-total">
+                        Итого: <span id="cart-total-price">0</span> ₽
+                    </div>
+                </div>
+
+                <div class="checkout-card">
+                    <h2 class="checkout-title">Оформление</h2>
+
+                    <div class="order-type">
+                        <div class="order-label">Тип заказа:</div>
+
+                        <div class="order-type-switch">
+                            <label class="order-type-option">
+                                <input type="radio" name="orderType" value="1" checked>
+                                <span>Здесь</span>
+                            </label>
+
+                            <label class="order-type-option">
+                                <input type="radio" name="orderType" value="2">
+                                <span>С собой</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="order-comment">
+                        <div class="order-label">Комментарий:</div>
+                        <textarea id="order-comment" class="order-comment-input" rows="4" placeholder="Например: без лука"></textarea>
+                    </div>
+
+                    <button id="btn-submit-order" class="order-submit-btn" type="button">
+                        Оформить
+                    </button>
+
+                    <div id="order-error" class="order-error hidden"></div>
+                    <div id="order-success" class="order-success hidden"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Правая панель не нужна -->
+        <div class="filters"></div>
+    </div>
+
+    <script src="/js/cart.js" asp-append-version="true"></script>
+</body>
+</html>

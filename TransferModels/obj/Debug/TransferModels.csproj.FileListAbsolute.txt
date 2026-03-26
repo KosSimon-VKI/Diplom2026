@@ -1,0 +1,37 @@
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\TransferModels\bin\Debug\TransferModels.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\TransferModels\bin\Debug\TransferModels.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\TransferModels\bin\Debug\Microsoft.Analytics.Interfaces.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\TransferModels\bin\Debug\Microsoft.Analytics.Interfaces.Streaming.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\TransferModels\bin\Debug\Microsoft.Analytics.Types.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\TransferModels\obj\Debug\TransferModels.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\TransferModels\obj\Debug\TransferModels.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\TransferModels\obj\Debug\Transfer.13F35D82.Up2Date
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\TransferModels\obj\Debug\TransferModels.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v2\TransferModels\obj\Debug\TransferModels.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\TransferModels\bin\Debug\TransferModels.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\TransferModels\bin\Debug\TransferModels.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\TransferModels\bin\Debug\Microsoft.Analytics.Interfaces.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\TransferModels\bin\Debug\Microsoft.Analytics.Interfaces.Streaming.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\TransferModels\bin\Debug\Microsoft.Analytics.Types.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\TransferModels\obj\Debug\TransferModels.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\TransferModels\obj\Debug\TransferModels.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\TransferModels\obj\Debug\Transfer.13F35D82.Up2Date
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\TransferModels\obj\Debug\TransferModels.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v4(с Cookie Auth)\TransferModels\obj\Debug\TransferModels.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\TransferModels\bin\Debug\TransferModels.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\TransferModels\bin\Debug\TransferModels.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\TransferModels\bin\Debug\Microsoft.Analytics.Interfaces.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\TransferModels\bin\Debug\Microsoft.Analytics.Interfaces.Streaming.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\TransferModels\bin\Debug\Microsoft.Analytics.Types.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\TransferModels\obj\Debug\TransferModels.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\TransferModels\obj\Debug\TransferModels.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\TransferModels\obj\Debug\Transfer.13F35D82.Up2Date
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\TransferModels\obj\Debug\TransferModels.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v5(с полноценным добавлением заказа в бд)\TransferModels\obj\Debug\TransferModels.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\TransferModels\bin\Debug\TransferModels.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\TransferModels\bin\Debug\TransferModels.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\TransferModels\obj\Debug\TransferModels.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\TransferModels\obj\Debug\TransferModels.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\TransferModels\obj\Debug\Transfer.13F35D82.Up2Date
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\TransferModels\obj\Debug\TransferModels.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\TransferModels\obj\Debug\TransferModels.pdb

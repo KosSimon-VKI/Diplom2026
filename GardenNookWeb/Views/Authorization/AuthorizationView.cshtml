@@ -1,0 +1,53 @@
+﻿@model GardenNookWeb.Models.AuthorizationModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Garden Nook</title>
+    <link rel="stylesheet" href="~/css/authorization.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="~/Images/logo.png" />
+        </div>
+
+        <div class="right">
+            <div class="form-wrapper">
+                <h2>Добро пожаловать</h2>
+
+                <form method="post" id="auth-form">
+                    <label>Телефон</label>
+                    <input asp-for="PhoneNumber" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (999) 123-45-67" />
+                    <span asp-validation-for="PhoneNumber" class="error"></span>
+
+                    <label>Пароль</label>
+                    <input asp-for="Password" type="password" />
+                    <span asp-validation-for="Password" class="error"></span>
+
+                    <button type="submit">Войти</button>
+
+                    <button type="button" class="secondary" onclick="window.location.href='/Registration/RegistrationView'">
+                        Регистрация
+                    </button>
+
+                    <div id="auth-error" class="error"></div>
+
+                    @if (Model != null && !string.IsNullOrEmpty(Model.Error))
+                    {
+                        <div class="error">@Model.Error</div>
+                    }
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/auth.js" asp-append-version="true"></script>
+</body>
+</html>

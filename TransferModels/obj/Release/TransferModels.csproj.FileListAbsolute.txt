@@ -1,0 +1,6 @@
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\TransferModels\bin\Release\TransferModels.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\TransferModels\bin\Release\TransferModels.pdb
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\TransferModels\obj\Release\TransferModels.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\TransferModels\obj\Release\TransferModels.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\TransferModels\obj\Release\TransferModels.dll
+C:\Users\Admin\Desktop\fh\C#\diplom_v6(c Codex)\TransferModels\obj\Release\TransferModels.pdb

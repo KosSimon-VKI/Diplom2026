@@ -1,0 +1,111 @@
+﻿<Window x:Class="GardenNookWpf.Views.KitchenWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GardenNookWpf.Views"
+        xmlns:controls="clr-namespace:GardenNookWpf.Views.Controls"
+        mc:Ignorable="d"
+        Title="Garden Nook"
+        Width="1500"
+        Height="900"
+        WindowStyle="None"
+        WindowState="Maximized"
+        ResizeMode="NoResize"
+        Icon="/Images/logo.png">
+
+    <Window.Resources>
+        <Style x:Key="RoundedButton" TargetType="Button">
+            <Setter Property="FontSize" Value="45"/>
+            <Setter Property="Foreground" Value="#FF474747"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Padding" Value="20,10"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="20"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"
+                                              RecognizesAccessKey="True"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="PanelSection" Width="20*"/>
+            <ColumnDefinition Width="80*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="#FF91A56E" Grid.Column="0">
+            <UniformGrid Rows="6"
+                         Columns="1"
+                         Margin="0,24,0,24">
+                <Button Content="Заказы" x:Name="OrdersButton"
+                        Style="{StaticResource RoundedButton}"
+                        Margin="20,10"
+                        MinHeight="90"
+                        FontSize="34"
+                        Click="OrdersButton_Click"
+                        FontWeight="Bold"/>
+
+                <Button Content="Тех. карты" x:Name="TechCardsButton"
+                        Style="{StaticResource RoundedButton}"
+                        Margin="20,10"
+                        MinHeight="90"
+                        FontSize="34"
+                        FontWeight="Bold"
+                        Click="TechCardsButton_Click"/>
+
+                <Button Content="Заготовки" x:Name="PreparationsButton"
+                        Style="{StaticResource RoundedButton}"
+                        Margin="20,10"
+                        MinHeight="90"
+                        FontSize="34"
+                        FontWeight="Bold"
+                        Click="PreparationsButton_Click"/>
+
+                <Button Content="Стоп-лист" x:Name="StopListButton"
+                        Style="{StaticResource RoundedButton}"
+                        Margin="20,10"
+                        MinHeight="90"
+                        FontSize="34"
+                        FontWeight="Bold"
+                        Click="StopListButton_Click"/>
+
+                <Button Content="Акт списания" x:Name="WriteOffButton"
+                        Style="{StaticResource RoundedButton}"
+                        Margin="20,10"
+                        MinHeight="90"
+                        FontSize="34"
+                        FontWeight="Bold"
+                        Click="WriteOffButton_Click"/>
+
+                <Button Content="Выйти" x:Name="BackButton"
+                        Style="{StaticResource RoundedButton}"
+                        Margin="20,10"
+                        MinHeight="90"
+                        FontSize="34"
+                        Click="BackButton_Click"
+                        FontWeight="Bold"/>
+            </UniformGrid>
+        </Grid>
+
+        <Grid Grid.Column="1" Background="#fff">
+            <Viewbox Stretch="Fill" StretchDirection="Both">
+                <Grid Width="1200" Height="900">
+                    <controls:OrdersDisplayControl x:Name="OrdersDisplayControl"/>
+                </Grid>
+            </Viewbox>
+        </Grid>
+    </Grid>
+</Window>

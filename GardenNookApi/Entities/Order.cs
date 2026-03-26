@@ -17,6 +17,8 @@ public partial class Order
 
     public string? Comment { get; set; }
 
+    public DateTime? PickupAt { get; set; }
+
     public decimal? TotalCalories { get; set; }
 
     public int? DiscountId { get; set; }

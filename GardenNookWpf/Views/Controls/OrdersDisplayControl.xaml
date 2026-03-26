@@ -4,156 +4,200 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d">
-    
-    <Grid Margin = "20,20,20,20">
+
+    <UserControl.Resources>
+        <ItemsPanelTemplate x:Key="OrdersItemsPanelTemplate">
+            <WrapPanel Orientation="Vertical"/>
+        </ItemsPanelTemplate>
+
+        <DataTemplate x:Key="OrderCardTemplate">
+            <Border Width="360"
+                    Margin="0,0,10,10"
+                    Background="White"
+                    BorderBrush="Black"
+                    BorderThickness="2"
+                    CornerRadius="20">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Border Grid.Row="0"
+                            Background="#FF91A56E"
+                            BorderBrush="Black"
+                            BorderThickness="0,0,0,2"
+                            CornerRadius="18,18,0,0"
+                            Padding="14,10">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="56"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Border Grid.Column="0"
+                                    Width="56"
+                                    Height="56"
+                                    BorderBrush="Black"
+                                    BorderThickness="1"
+                                    CornerRadius="8">
+                                <Border.Style>
+                                    <Style TargetType="Border">
+                                        <Setter Property="Background" Value="#FF606E52"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding IsOverdue}" Value="True">
+                                                <Setter Property="Background" Value="#742C27"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Border.Style>
+                                <TextBlock Text="{Binding OrderNumberText}"
+                                            FontSize="24"
+                                            FontWeight="Bold"
+                                            Foreground="White"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"/>
+                            </Border>
+
+                            <TextBlock Grid.Column="1"
+                                        Text="{Binding OrderTypeText}"
+                                        Margin="10,0,8,0"
+                                        FontSize="22"
+                                        FontWeight="SemiBold"
+                                        TextWrapping="Wrap"
+                                        VerticalAlignment="Center">
+                                <TextBlock.Style>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="Foreground" Value="#FF5D6B4E"/>
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding IsOverdue}" Value="True">
+                                                <Setter Property="Foreground" Value="#8A3A33"/>
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+
+                            <TextBlock Grid.Column="2"
+                                        Text="{Binding ElapsedText}"
+                                        FontSize="30"
+                                        FontWeight="Bold"
+                                        Foreground="#FF474747"
+                                        HorizontalAlignment="Right"
+                                        VerticalAlignment="Center"/>
+                        </Grid>
+                    </Border>
+
+                    <StackPanel Grid.Row="1"
+                                Margin="10,8,10,2">
+                        <ItemsControl ItemsSource="{Binding DisplayItems}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Border Background="#FFEDEDED"
+                                            BorderBrush="Black"
+                                            BorderThickness="2"
+                                            CornerRadius="16"
+                                            Margin="0,0,0,8"
+                                            Padding="10">
+                                        <StackPanel>
+                                            <TextBlock Text="{Binding NameLine}"
+                                                        FontSize="20"
+                                                        Foreground="#FF474747"
+                                                        TextWrapping="Wrap"/>
+
+                                            <TextBlock Text="{Binding ToppingsLine}"
+                                                        Margin="18,6,0,0"
+                                                        FontSize="19"
+                                                        Foreground="#FF474747"
+                                                        TextWrapping="Wrap"
+                                                        Visibility="{Binding ToppingsVisibility}"/>
+                                        </StackPanel>
+                                    </Border>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="2"
+                                Margin="10,2,10,10">
+                        <Border Padding="10,8"
+                                Margin="0,0,0,6"
+                                Background="#FFF2FAF0"
+                                BorderBrush="Black"
+                                BorderThickness="1"
+                                CornerRadius="12"
+                                Visibility="{Binding PickupAtVisibility}">
+                            <TextBlock Text="{Binding PickupAtText}"
+                                        FontSize="18"
+                                        Foreground="#FF2D5A27"
+                                        FontWeight="SemiBold"
+                                        TextWrapping="Wrap"/>
+                        </Border>
+
+                        <Border Padding="10,8"
+                                Background="#FFF6F6F6"
+                                BorderBrush="Black"
+                                BorderThickness="1"
+                                CornerRadius="12"
+                                Visibility="{Binding OrderCommentVisibility}">
+                            <TextBlock Text="{Binding OrderCommentText}"
+                                        FontSize="18"
+                                        Foreground="#FF474747"
+                                        FontStyle="Italic"
+                                        TextWrapping="Wrap"/>
+                        </Border>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </DataTemplate>
+    </UserControl.Resources>
+
+    <Grid Margin="20,20,20,20">
         <TextBlock x:Name="EmptyOrdersText"
-                    Text="Нет активных заказов"
-                    FontSize="38"
-                    FontWeight="Bold"
-                    Foreground="#FF474747"
-                    HorizontalAlignment="Center"
-                    VerticalAlignment="Center"
-                    Visibility="Collapsed"/>
+                   Text="Нет активных заказов"
+                   FontSize="38"
+                   FontWeight="Bold"
+                   Foreground="#FF474747"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Visibility="Collapsed"/>
 
         <ScrollViewer HorizontalScrollBarVisibility="Auto"
-                        VerticalScrollBarVisibility="Disabled">
-            <ItemsControl x:Name="OrdersItemsControl">
-                <ItemsControl.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <WrapPanel Orientation="Vertical"/>
-                    </ItemsPanelTemplate>
-                </ItemsControl.ItemsPanel>
+                      VerticalScrollBarVisibility="Disabled">
+            <StackPanel>
+                <StackPanel x:Name="PickupOrdersSection"
+                            Visibility="Collapsed">
+                    <TextBlock Text="К указанному времени"
+                               Margin="0,0,0,10"
+                               FontSize="28"
+                               FontWeight="Bold"
+                               Foreground="#FF474747"/>
+                    <ItemsControl x:Name="PickupOrdersItemsControl"
+                                  ItemTemplate="{StaticResource OrderCardTemplate}">
+                        <ItemsControl.ItemsPanel>
+                            <StaticResource ResourceKey="OrdersItemsPanelTemplate"/>
+                        </ItemsControl.ItemsPanel>
+                    </ItemsControl>
+                </StackPanel>
 
-                <ItemsControl.ItemTemplate>
-                    <DataTemplate>
-                        <Border Width="360"
-                                Margin="0,0,10,10"
-                                Background="White"
-                                BorderBrush="Black"
-                                BorderThickness="2"
-                                CornerRadius="20">
-                            <Grid>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="*"/>
-                                    <RowDefinition Height="Auto"/>
-                                </Grid.RowDefinitions>
-
-                                <Border Grid.Row="0"
-                                        Background="#FF91A56E"
-                                        BorderBrush="Black"
-                                        BorderThickness="0,0,0,2"
-                                        CornerRadius="18,18,0,0"
-                                        Padding="14,10">
-                                    <Grid>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="56"/>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="Auto"/>
-                                        </Grid.ColumnDefinitions>
-
-                                        <Border Grid.Column="0"
-                                                Width="56"
-                                                Height="56"
-                                                BorderBrush="Black"
-                                                BorderThickness="1"
-                                                CornerRadius="8">
-                                            <Border.Style>
-                                                <Style TargetType="Border">
-                                                    <Setter Property="Background" Value="#FF606E52"/>
-                                                    <Style.Triggers>
-                                                        <DataTrigger Binding="{Binding IsOverdue}" Value="True">
-                                                            <Setter Property="Background" Value="#742C27"/>
-                                                        </DataTrigger>
-                                                    </Style.Triggers>
-                                                </Style>
-                                            </Border.Style>
-                                            <TextBlock Text="{Binding OrderNumberText}"
-                                                        FontSize="24"
-                                                        FontWeight="Bold"
-                                                        Foreground="White"
-                                                        HorizontalAlignment="Center"
-                                                        VerticalAlignment="Center"/>
-                                        </Border>
-
-                                        <TextBlock Grid.Column="1"
-                                                    Text="{Binding OrderTypeText}"
-                                                    Margin="10,0,8,0"
-                                                    FontSize="22"
-                                                    FontWeight="SemiBold"
-                                                    TextWrapping="Wrap"
-                                                    VerticalAlignment="Center">
-                                            <TextBlock.Style>
-                                                <Style TargetType="TextBlock">
-                                                    <Setter Property="Foreground" Value="#FF5D6B4E"/>
-                                                    <Style.Triggers>
-                                                        <DataTrigger Binding="{Binding IsOverdue}" Value="True">
-                                                            <Setter Property="Foreground" Value="#8A3A33"/>
-                                                        </DataTrigger>
-                                                    </Style.Triggers>
-                                                </Style>
-                                            </TextBlock.Style>
-                                        </TextBlock>
-
-                                        <TextBlock Grid.Column="2"
-                                                    Text="{Binding ElapsedText}"
-                                                    FontSize="30"
-                                                    FontWeight="Bold"
-                                                    Foreground="#FF474747"
-                                                    HorizontalAlignment="Right"
-                                                    VerticalAlignment="Center"/>
-                                    </Grid>
-                                </Border>
-
-                                <StackPanel Grid.Row="1"
-                                            Margin="10,8,10,2">
-                                    <ItemsControl ItemsSource="{Binding DisplayItems}">
-                                        <ItemsControl.ItemTemplate>
-                                            <DataTemplate>
-                                                <Border Background="#FFEDEDED"
-                                                        BorderBrush="Black"
-                                                        BorderThickness="2"
-                                                        CornerRadius="16"
-                                                        Margin="0,0,0,8"
-                                                        Padding="10">
-                                                    <StackPanel>
-                                                        <TextBlock Text="{Binding NameLine}"
-                                                                    FontSize="20"
-                                                                    Foreground="#FF474747"
-                                                                    TextWrapping="Wrap"/>
-
-                                                        <TextBlock Text="{Binding ToppingsLine}"
-                                                                    Margin="18,6,0,0"
-                                                                    FontSize="19"
-                                                                    Foreground="#FF474747"
-                                                                    TextWrapping="Wrap"
-                                                                    Visibility="{Binding ToppingsVisibility}"/>
-                                                    </StackPanel>
-                                                </Border>
-                                            </DataTemplate>
-                                        </ItemsControl.ItemTemplate>
-                                    </ItemsControl>
-                                </StackPanel>
-
-                                <Border Grid.Row="2"
-                                        Margin="10,2,10,10"
-                                        Padding="10,8"
-                                        Background="#FFF6F6F6"
-                                        BorderBrush="Black"
-                                        BorderThickness="1"
-                                        CornerRadius="12"
-                                        Visibility="{Binding OrderCommentVisibility}">
-                                    <TextBlock Text="{Binding OrderCommentText}"
-                                                FontSize="18"
-                                                Foreground="#FF474747"
-                                                FontStyle="Italic"
-                                                TextWrapping="Wrap"/>
-                                </Border>
-                            </Grid>
-                        </Border>
-                    </DataTemplate>
-                </ItemsControl.ItemTemplate>
-            </ItemsControl>
+                <StackPanel x:Name="NoPickupOrdersSection"
+                            Margin="0,18,0,0"
+                            Visibility="Collapsed">
+                    <TextBlock Text="Сразу"
+                               Margin="0,0,0,10"
+                               FontSize="28"
+                               FontWeight="Bold"
+                               Foreground="#FF474747"/>
+                    <ItemsControl x:Name="NoPickupOrdersItemsControl"
+                                  ItemTemplate="{StaticResource OrderCardTemplate}">
+                        <ItemsControl.ItemsPanel>
+                            <StaticResource ResourceKey="OrdersItemsPanelTemplate"/>
+                        </ItemsControl.ItemsPanel>
+                    </ItemsControl>
+                </StackPanel>
+            </StackPanel>
         </ScrollViewer>
     </Grid>
 </UserControl>

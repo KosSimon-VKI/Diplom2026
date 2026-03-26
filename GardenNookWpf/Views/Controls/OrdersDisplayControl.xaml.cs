@@ -14,16 +14,32 @@ namespace GardenNookWpf.Views.Controls
             InitializeComponent();
         }
 
-        public void ShowOrders(IReadOnlyCollection<KitchenOrderCardViewModel> cards, string emptyText)
+        public void ShowOrders(
+            IReadOnlyCollection<KitchenOrderCardViewModel> pickupCards,
+            IReadOnlyCollection<KitchenOrderCardViewModel> noPickupCards,
+            string emptyText)
         {
-            OrdersItemsControl.ItemsSource = cards;
+            PickupOrdersItemsControl.ItemsSource = pickupCards;
+            NoPickupOrdersItemsControl.ItemsSource = noPickupCards;
+
+            var hasPickupCards = pickupCards.Count > 0;
+            var hasNoPickupCards = noPickupCards.Count > 0;
+
+            PickupOrdersSection.Visibility = hasPickupCards ? Visibility.Visible : Visibility.Collapsed;
+            NoPickupOrdersSection.Visibility = hasNoPickupCards ? Visibility.Visible : Visibility.Collapsed;
+
             EmptyOrdersText.Text = emptyText;
-            EmptyOrdersText.Visibility = cards.Count == 0 ? Visibility.Visible : Visibility.Collapsed;
+            EmptyOrdersText.Visibility = hasPickupCards || hasNoPickupCards
+                ? Visibility.Collapsed
+                : Visibility.Visible;
         }
 
         public void ShowMessage(string message)
         {
-            OrdersItemsControl.ItemsSource = null;
+            PickupOrdersItemsControl.ItemsSource = null;
+            NoPickupOrdersItemsControl.ItemsSource = null;
+            PickupOrdersSection.Visibility = Visibility.Collapsed;
+            NoPickupOrdersSection.Visibility = Visibility.Collapsed;
             EmptyOrdersText.Text = message;
             EmptyOrdersText.Visibility = Visibility.Visible;
         }

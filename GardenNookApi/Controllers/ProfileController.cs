@@ -56,6 +56,7 @@ namespace GardenNookApi.Controllers
                 {
                     OrderId = o.Id,
                     CreatedAt = o.CreatedAt,
+                    PickupAt = o.PickupAt,
                     Status = o.Status != null ? o.Status.Name : null,
                     OrderType = o.OrderType != null ? (o.OrderType.Name ?? string.Empty) : string.Empty,
                     TotalPrice = o.TotalPrice ?? 0m,
@@ -69,6 +70,7 @@ namespace GardenNookApi.Controllers
                 {
                     OrderId = o.OrderId,
                     CreatedAt = o.CreatedAt,
+                    PickupAt = o.PickupAt,
                     Status = o.Status ?? string.Empty,
                     OrderType = o.OrderType,
                     TotalPrice = o.TotalPrice,

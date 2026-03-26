@@ -12,6 +12,11 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 builder.Services.AddScoped<IPreparationStockService, PreparationStockService>();
+builder.Services.Configure<PickupSchedulingOptions>(
+    builder.Configuration.GetSection(PickupSchedulingOptions.SectionName));
+builder.Services.AddSingleton<IPickupSchedulingService, PickupSchedulingService>();
+builder.Services.Configure<KitchenPickupFilterOptions>(
+    builder.Configuration.GetSection(KitchenPickupFilterOptions.SectionName));
 
 // CORS  Web (7009) + cookies
 builder.Services.AddCors(options =>

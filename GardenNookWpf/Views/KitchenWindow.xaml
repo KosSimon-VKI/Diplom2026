@@ -42,8 +42,8 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition x:Name="PanelSection" Width="20*"/>
-            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition x:Name="PanelSection" Width="10*"/>
+            <ColumnDefinition Width="90*"/>
         </Grid.ColumnDefinitions>
 
         <Grid Background="#FF91A56E" Grid.Column="0">

@@ -82,6 +82,35 @@
         }
       }
     },
+    "/api/orders/pickup-slots": {
+      "get": {
+        "tags": [
+          "Orders"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PickupSlotsResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PickupSlotsResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PickupSlotsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/orders": {
       "post": {
         "tags": [
@@ -376,6 +405,11 @@
             "format": "date-time",
             "nullable": true
           },
+          "pickupAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
           "orderType": {
             "type": "string",
             "nullable": true
@@ -501,6 +535,11 @@
             "type": "string",
             "nullable": true
           },
+          "pickupAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
           "dishes": {
             "type": "array",
             "items": {
@@ -566,6 +605,40 @@
           "quantity": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PickupSlotDto": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "string",
+            "nullable": true
+          },
+          "label": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PickupSlotsResponse": {
+        "type": "object",
+        "properties": {
+          "takeawayOrderTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isOptional": {
+            "type": "boolean"
+          },
+          "slots": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PickupSlotDto"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -653,6 +726,11 @@
             "format": "int32"
           },
           "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "pickupAt": {
             "type": "string",
             "format": "date-time",
             "nullable": true

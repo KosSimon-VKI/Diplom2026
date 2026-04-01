@@ -114,6 +114,26 @@
     ]
   },
   {
+    "ContainingType": "GardenNookApi.Controllers.OrdersController",
+    "Method": "GetPickupSlots",
+    "RelativePath": "api/orders/pickup-slots",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "TransferModels.Orders.PickupSlotsResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "GardenNookApi.Controllers.ProfileController",
     "Method": "GetProfile",
     "RelativePath": "api/profile",

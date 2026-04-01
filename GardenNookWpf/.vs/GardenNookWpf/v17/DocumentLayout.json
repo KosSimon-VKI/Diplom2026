@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\fh\\C#\\diplom_v6(c Codex)\\GardenNookWpf\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4EB6663D-C4DC-4025-8622-A971A6E1D64B}|GardenNookWpf.csproj|c:\\users\\admin\\desktop\\fh\\c#\\diplom_v6(c codex)\\gardennookwpf\\views\\controls\\ordersdisplaycontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4EB6663D-C4DC-4025-8622-A971A6E1D64B}|GardenNookWpf.csproj|solutionrelative:views\\controls\\ordersdisplaycontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4EB6663D-C4DC-4025-8622-A971A6E1D64B}|GardenNookWpf.csproj|c:\\users\\admin\\desktop\\fh\\c#\\diplom_v6(c codex)\\gardennookwpf\\views\\kitchenwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4EB6663D-C4DC-4025-8622-A971A6E1D64B}|GardenNookWpf.csproj|solutionrelative:views\\kitchenwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
@@ -35,6 +39,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "OrdersDisplayControl.xaml",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\fh\\C#\\diplom_v6(c Codex)\\GardenNookWpf\\Views\\Controls\\OrdersDisplayControl.xaml",
+              "RelativeDocumentMoniker": "Views\\Controls\\OrdersDisplayControl.xaml",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\fh\\C#\\diplom_v6(c Codex)\\GardenNookWpf\\Views\\Controls\\OrdersDisplayControl.xaml",
+              "RelativeToolTip": "Views\\Controls\\OrdersDisplayControl.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-26T16:11:56.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "KitchenWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\fh\\C#\\diplom_v6(c Codex)\\GardenNookWpf\\Views\\KitchenWindow.xaml",
               "RelativeDocumentMoniker": "Views\\KitchenWindow.xaml",

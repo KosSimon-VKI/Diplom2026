@@ -16,12 +16,12 @@
 
     <Window.Resources>
         <Style x:Key="RoundedButton" TargetType="Button">
-            <Setter Property="FontSize" Value="45"/>
+            <Setter Property="FontSize" Value="30"/>
             <Setter Property="Foreground" Value="#FF474747"/>
             <Setter Property="Background" Value="White"/>
             <Setter Property="BorderBrush" Value="Black"/>
             <Setter Property="BorderThickness" Value="2"/>
-            <Setter Property="Padding" Value="20,10"/>
+            <Setter Property="Padding" Value="12,8"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
@@ -42,8 +42,8 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition x:Name="PanelSection" Width="10*"/>
-            <ColumnDefinition Width="90*"/>
+            <ColumnDefinition x:Name="PanelSection" Width="280"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <Grid Background="#FF91A56E" Grid.Column="0">
@@ -52,49 +52,43 @@
                          Margin="0,24,0,24">
                 <Button Content="Заказы" x:Name="OrdersButton"
                         Style="{StaticResource RoundedButton}"
-                        Margin="20,10"
+                        Margin="16,10"
                         MinHeight="90"
-                        FontSize="34"
                         Click="OrdersButton_Click"
                         FontWeight="Bold"/>
 
                 <Button Content="Тех. карты" x:Name="TechCardsButton"
                         Style="{StaticResource RoundedButton}"
-                        Margin="20,10"
+                        Margin="16,10"
                         MinHeight="90"
-                        FontSize="34"
                         FontWeight="Bold"
                         Click="TechCardsButton_Click"/>
 
                 <Button Content="Заготовки" x:Name="PreparationsButton"
                         Style="{StaticResource RoundedButton}"
-                        Margin="20,10"
+                        Margin="16,10"
                         MinHeight="90"
-                        FontSize="34"
                         FontWeight="Bold"
                         Click="PreparationsButton_Click"/>
 
                 <Button Content="Стоп-лист" x:Name="StopListButton"
                         Style="{StaticResource RoundedButton}"
-                        Margin="20,10"
+                        Margin="16,10"
                         MinHeight="90"
-                        FontSize="34"
                         FontWeight="Bold"
                         Click="StopListButton_Click"/>
 
                 <Button Content="Акт списания" x:Name="WriteOffButton"
                         Style="{StaticResource RoundedButton}"
-                        Margin="20,10"
+                        Margin="16,10"
                         MinHeight="90"
-                        FontSize="34"
                         FontWeight="Bold"
                         Click="WriteOffButton_Click"/>
 
                 <Button Content="Выйти" x:Name="BackButton"
                         Style="{StaticResource RoundedButton}"
-                        Margin="20,10"
+                        Margin="16,10"
                         MinHeight="90"
-                        FontSize="34"
                         Click="BackButton_Click"
                         FontWeight="Bold"/>
             </UniformGrid>

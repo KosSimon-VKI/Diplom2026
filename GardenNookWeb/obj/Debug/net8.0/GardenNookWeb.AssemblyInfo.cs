@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GardenNookWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4cdb7d418dc8dddc5b566cff2fc2de5e38e30daa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a988d42371f3808920ca8fc5de25c7ba0c2e7187")]
 [assembly: System.Reflection.AssemblyProductAttribute("GardenNookWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GardenNookWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

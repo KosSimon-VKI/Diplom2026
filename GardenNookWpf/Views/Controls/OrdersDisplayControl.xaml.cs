@@ -19,27 +19,22 @@ namespace GardenNookWpf.Views.Controls
             IReadOnlyCollection<KitchenOrderCardViewModel> noPickupCards,
             string emptyText)
         {
-            PickupOrdersItemsControl.ItemsSource = pickupCards;
-            NoPickupOrdersItemsControl.ItemsSource = noPickupCards;
+            var allCards = new List<KitchenOrderCardViewModel>(pickupCards.Count + noPickupCards.Count);
+            allCards.AddRange(pickupCards);
+            allCards.AddRange(noPickupCards);
 
-            var hasPickupCards = pickupCards.Count > 0;
-            var hasNoPickupCards = noPickupCards.Count > 0;
-
-            PickupOrdersSection.Visibility = hasPickupCards ? Visibility.Visible : Visibility.Collapsed;
-            NoPickupOrdersSection.Visibility = hasNoPickupCards ? Visibility.Visible : Visibility.Collapsed;
+            OrdersItemsControl.ItemsSource = allCards;
+            var hasOrders = allCards.Count > 0;
+            OrdersScrollViewer.Visibility = hasOrders ? Visibility.Visible : Visibility.Collapsed;
 
             EmptyOrdersText.Text = emptyText;
-            EmptyOrdersText.Visibility = hasPickupCards || hasNoPickupCards
-                ? Visibility.Collapsed
-                : Visibility.Visible;
+            EmptyOrdersText.Visibility = hasOrders ? Visibility.Collapsed : Visibility.Visible;
         }
 
         public void ShowMessage(string message)
         {
-            PickupOrdersItemsControl.ItemsSource = null;
-            NoPickupOrdersItemsControl.ItemsSource = null;
-            PickupOrdersSection.Visibility = Visibility.Collapsed;
-            NoPickupOrdersSection.Visibility = Visibility.Collapsed;
+            OrdersItemsControl.ItemsSource = null;
+            OrdersScrollViewer.Visibility = Visibility.Collapsed;
             EmptyOrdersText.Text = message;
             EmptyOrdersText.Visibility = Visibility.Visible;
         }
